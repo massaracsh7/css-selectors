@@ -1,0 +1,27 @@
+.game {
+  width: 80%;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: $color-shadow;
+  }
+
+}
+
+.instr {
+  text-align: center;
+  
+  &__header {
+  text-shadow: $color-text-shadow;
+  font-size: 2rem;
+  }
+}
+
+.line-number {
+  background: $color-grey;
+  text-align: right;
+  font-size: 0.75rem;
+  padding: 0.4rem;
+  line-height: 2rem;
+}
