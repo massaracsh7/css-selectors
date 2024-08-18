@@ -1,0 +1,69 @@
+.scene {
+  position: relative;
+  padding-top: 4rem;
+  height: 10rem;
+  background-image: url('./assets/images/pngwing.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 60%;
+  border-radius: 0.3rem;
+  box-shadow: $color-shadow;
+  margin: 2rem 0rem;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__img {
+    width: 5rem;
+  }
+
+  &__tooltip {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: -90%;
+    left: 0;
+    background-color: $color-tooltip;
+    color: #1e1e1e;
+    font-size: 0.75rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+  }
+
+  &__box {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    text-align: center;
+
+    &--active {
+      transition: all 5s ease;
+    }
+
+    &--shine {
+      filter: drop-shadow(0 0 20px #555);
+      .scene__tooltip {
+        display: flex;
+      }
+
+      img {
+        filter: brightness(130%);
+      }
+    }
+  }
+
+}
+
+.image--search {
+  animation: move 1s linear infinite;
+}
+
+.image--win {
+  animation: rotate 5s infinite;
+}
