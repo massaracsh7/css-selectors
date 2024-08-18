@@ -1,0 +1,60 @@
+.example {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 400;
+  background: $color-black;
+
+  &__main {
+    display: flex;
+    border: 1px solid $color-lightgrey;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgb(65, 65, 65);
+    padding: 1rem;
+    border: 1px solid lightgrey;
+
+    &__title {
+      font-size: 0.9rem;
+      padding: 0rem 0.75rem;
+    }
+
+  }
+
+  &__box {
+    line-height: 2rem;
+    padding: 5px;
+  }
+}
+
+pre {
+  margin: 0;
+
+  @media (max-width: 580px) {
+    font-size: 0.75rem;
+  }
+}
+
+.wrap {
+  padding-left: 1rem;
+}
+
+.shaking {
+  animation: shake 0.2s;
+}
+
+.code--shine {
+  color: #f5d67b;
+  text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #f5d67b,
+    0 0 40px #f5d67b,
+    0 0 50px #f5d67b,
+    0 0 60px #f5d67b,
+    0 0 70px #f5d67b;
+}
