@@ -1,0 +1,33 @@
+.level {
+  width: 20%;
+  
+  &__list {
+    margin-bottom: 0.5rem;
+  }
+
+  &__item {
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 0.19rem;
+    background: $color-bg-level;
+    font-size: 1rem;
+    margin-top: 0.625rem;
+    border: 1px solid $color-white;
+    box-shadow: $color-shadow;
+
+    &:hover,
+    &--active {
+      background: #e6e6e6;
+      text-shadow: $color-text-shadow;
+    }
+
+    &--right {
+      color: $color-green;
+    }
+
+    &--wrong {
+      color: $color-red;
+    }
+  }
+
+}
