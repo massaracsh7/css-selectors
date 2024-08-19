@@ -6,15 +6,14 @@
     "jest/globals": true
   },
   "extends": [
-    "airbnb-typescript/base",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "tsconfig.json",
+    "project": "./tsconfig.json",
     "sourceType": "module",
-    "tsconfigRootDir": "<rootDir>"
+    "tsconfigRootDir": "./"
   },
   "plugins": [
     "@typescript-eslint",
@@ -25,9 +24,6 @@
     "no-console": 0,
     "max-len": ["warn", { "code": 120 }],
     "indent": ["warn", 2, {
-      "SwitchCase": 1
-    }],
-    "@typescript-eslint/indent": ["warn", 2, {
       "SwitchCase": 1
     }],
     "import/prefer-default-export": "off",

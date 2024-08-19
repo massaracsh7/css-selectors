@@ -25,7 +25,7 @@ module.exports = ({ development }) => ({
   },
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'assets/[hash][ext]',
   },
   module: {
@@ -63,7 +63,7 @@ module.exports = ({ development }) => ({
     new CopyPlugin({
      patterns: [{
        from: 'src/assets/images',
-       to: 'dist/images',
+       to: 'images',
      },
     {
       from: 'src/assets/favicon/favicon.ico',
