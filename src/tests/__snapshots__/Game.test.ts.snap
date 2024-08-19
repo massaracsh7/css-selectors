@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create scene view should return a defined scene with mock data 1`] = `
+<div
+  class="scene__wrapper"
+>
+  <div
+    class="scene__box"
+  >
+    <div
+      class="scene__tooltip"
+    />
+    <img
+      class="scene__img"
+      data-num-i="0"
+      src="duck"
+    />
+  </div>
+  <div
+    class="scene__box"
+  >
+    <div
+      class="scene__tooltip"
+    />
+    <img
+      class="scene__img image--search"
+      data-num-i="1"
+      src="zebra"
+    />
+  </div>
+  <div
+    class="scene__box"
+  >
+    <div
+      class="scene__tooltip"
+    />
+    <img
+      class="scene__img"
+      data-num-i="2"
+      src="giraffe"
+    />
+  </div>
+  <div
+    class="scene__box"
+  >
+    <div
+      class="scene__tooltip"
+    />
+    <img
+      class="scene__img"
+      data-num-i="3"
+      src="flamingo"
+    />
+  </div>
+</div>
+`;

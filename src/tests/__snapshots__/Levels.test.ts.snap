@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Levels Module should match the snapshot of levelsList 1`] = `
+<div
+  class="level"
+>
+  <ul
+    class="level__list"
+  />
+  <button
+    class="reset"
+    type="submit"
+  >
+    reset
+  </button>
+</div>
+`;

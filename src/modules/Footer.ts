@@ -11,7 +11,7 @@ export default class Footer implements PartsPage {
     const copy = new Element('div', 'footer__year', '2023');
     const linkRss = new Link('footer__rss', '', 'https://rs.school/js/').create();
     linkRss.append(logoImg);
-    const footer = new Block('div', 'footer', linkGit.create(), copy.create(), linkRss);
+    const footer = new Block('footer', 'footer', linkGit.create(), copy.create(), linkRss);
     return footer.create();
   };
 }
