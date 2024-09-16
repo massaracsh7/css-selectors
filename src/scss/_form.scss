@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+input {
+  border: none;
+  background: $input-color;
+  font-family: "Comfortaa", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  width: 86%;
+  line-height: 1.5rem;
+  padding-left: 0.5rem;
+
+  &:focus {
+    outline: none;
+    border-color: $input-color;
+  }
+
+    @media (max-width: 580px) {
+      font-size: 0.75rem;
+    }
+  
+}
+
+.input-flash {
+  background: $flash-color;
+  animation: 2s linear 2s infinite flash;
+}

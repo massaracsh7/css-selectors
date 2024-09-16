@@ -1,0 +1,53 @@
+.button--enter,
+.button--help {
+  cursor: pointer;
+  background-color: $color-grey;
+  color: $color-lightgrey;
+  border: 0.1rem solid $color-lightgrey;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s ease-in,
+    color 0.1s ease-in,
+    border-color 0.1s ease-in;
+}
+
+.button--enter:hover,
+.button--help:hover {
+  background-color: $color-black;
+  color: $color-white;
+  border-color: $color-black;
+}
+
+.button--enter:active,
+.button--help:active,
+.reset:active {
+  transform: scale(0.95);
+}
+
+.reset {
+  width: 10rem;
+  margin-left: auto;
+  cursor: pointer;
+  background: $color-bg-level;
+  color: $color-white;
+  border: 0.1rem solid $color-white;
+  padding: 0.3rem;
+  font-size: 1rem;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s ease-in,
+    color 0.1s ease-in,
+    border-color 0.1s ease-in;
+  border-radius: 0.2rem;
+
+  &:hover {
+    background: $input-color;
+    text-shadow: $color-text-shadow
+  }
+}

@@ -1,0 +1,100 @@
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #808080;
+$color-darkgrey: #444444;
+$color-lightgrey: #d3d3d3;
+$color-blue: #0000ff;
+$color-lightblue: #add8e6;
+
+$color-shadow: 0.12rem 0.19rem 0.6rem 0.19rem #808080;
+$color-main-bg: rgba(118, 145, 145, 0.3);
+
+$color-text-shadow: 1px 1px 2px #0000ff;
+$flash-color: rgb(62 202 255 / 34%);
+$input-color: #e6e6e6;
+$color-bg-level: rgba(48, 175, 243, 0.87);
+
+$color-tooltip: #add8e6;
+
+$color-bg-modal: rgba(0, 0, 0, 0.8);
+
+$color-editor: rgba(255, 255, 255, 0.6);
+$color-editor-bg: #414141;
+$color-green: #008000;
+$color-red: #ff0000;
+
+$filter-shadow: drop-shadow(0 0 20px #555);
+
+@keyframes flash {
+  50% {
+    background: $input-color;
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  0% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(5px);
+  }
+
+  20% {
+    transform: translateX(-5px);
+  }
+
+  40% {
+    transform: translateX(5px);
+  }
+
+  60% {
+    transform: translateX(-5px);
+  }
+
+  80% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+%text--shine {
+  color: #f5d67b;
+  text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #f5d67b,
+    0 0 40px #f5d67b,
+    0 0 50px #f5d67b,
+    0 0 60px #f5d67b,
+    0 0 70px #f5d67b;
+}

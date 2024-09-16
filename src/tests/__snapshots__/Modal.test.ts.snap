@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal functionality create modal should return modal and match snapshot 1`] = `
+<div
+  class="modal"
+>
+  <div
+    class="modal__wrapper"
+  >
+    <div
+      class="modal__text"
+    >
+      Game over
+    </div>
+    <button
+      class="modal__btn"
+      type="button"
+    >
+      New Game
+    </button>
+  </div>
+</div>
+`;

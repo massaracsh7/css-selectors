@@ -1,0 +1,30 @@
+.editor {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 400;
+  background: $color-black;
+
+  &__main {
+    display: flex;
+    border: 1px solid $color-lightgrey;
+    background-color: $color-lightgrey;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgb(65, 65, 65);
+    padding: 1rem;
+    border: 1px solid $color-lightgrey;
+
+    &__title {
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 0rem 0.75rem;
+    }
+  }
+
+}
